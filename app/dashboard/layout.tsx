@@ -1,7 +1,7 @@
-import SideNav from '@/app/ui/dashboard/sidenav';
-import { Layout } from '../types/Layout';
+import type { Layout } from "@/app/types/Layout";
+import SideNav from "@/app/ui/dashboard/sidenav";
 
-function DashboardLayout({ children }: Layout) {
+function Layout({ children }: Layout) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <div className="w-full flex-none md:w-64">
@@ -13,4 +13,4 @@ function DashboardLayout({ children }: Layout) {
   );
 }
 
-export default DashboardLayout;
+export default Layout;
